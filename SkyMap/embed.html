@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Virtual Sky</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+	<!--
+		Virtual Sky <canvas> application
+		(c) 2010-2012 Stuart Lowe (Las Cumbras Observatory Global Telescope)
+	-->
+	<style>
+	html,body { height: 100%; overflow-y: hidden; }
+	body {
+		font-family: Helvetica, sans-serif;
+		color: black;
+		margin: 0px;
+		padding: 0px;
+		height: 100%;
+		width: 100%;
+		font-size: 1em;
+	}
+	#starmapper { height: 100%; width:100%; position: relative; }
+	#virtualskyinfobox{
+		font-size: 12px;
+		display:none;
+		background-color:rgba(200,200,200,1);
+		color:black;
+		padding:5px;
+		max-width:150px;
+		border-radius:0.5em;
+		-moz-border-radius: 0.5em;
+		-webkit-border-radius: 0.5em;
+		box-shadow:0px 0px 20px rgba(255,255,255,0.5);
+		-moz-box-shadow:0px 0px 20px rgba(255,255,255,0.5);
+		-webkit-box-shadow:0px 0px 20px rgba(255,255,255,0.5);
+	}
+	.virtualskyinfocredit{
+		font-size:0.5em;
+		float:left;
+		position:absolute;
+		padding:5px;
+		color: white;
+	}
+	#virtualskyinfobox img { width: 128px; height: 128px; }
+	</style>
+</head>
+
+<body>
+	<iframe width="1365" 
+	height="655" 
+	frameborder="0" 
+	scrolling="no" 
+	marginheight="0" 
+	marginwidth="0" 
+	src="http://slowe.github.io/VirtualSky/embed?longitude=112.4338&latitude=-7.4664&projection=stereo&constellations=true&constellationlabels=true&showstarlabels=true&az=262.25"
+	allowTransparency="true"></iframe>
+</body>
+</html>
