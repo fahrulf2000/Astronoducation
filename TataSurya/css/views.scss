@@ -1,4 +1,4 @@
-/* --------------------------------------------------------------------------- planets index */
+
 
 #mercury { z-index: 10; }
 #venus   { z-index: 9; }
@@ -11,7 +11,7 @@
 #neptune { z-index: 2; }
 #sun     { z-index: 1; }
 
-/* --------------------------------------------------------------------------- animations */
+
 
 @keyframes orbit {
   0%    { transform: rotateZ(0deg); }
@@ -28,7 +28,7 @@
   100% { transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); }
 }
 
-/* --------------------------------------------------------------------------- opening */
+
 
 .view-3D .opening #sun, 
 .view-3D .opening .orbit, 
@@ -43,7 +43,7 @@
   box-shadow: 0 0 0 rgba(255, 160, 60, 0);
 }
 
-/* --------------------------------------------------------------------------- 2D view */
+
 
 .view-2D.zoom-large #sun    { transform-style: flat; }
 .view-2D.zoom-large .orbit  { transform-style: flat; }
@@ -54,7 +54,7 @@
 .view-2D .planet, 
 .view-2D .moon              { transform: rotateX(90deg); }
 
-/* --------------------------------------------------------------------------- 3D view */
+
 
 .view-3D.zoom-large #sun    { transform-style: preserve-3d; }
 .view-3D.zoom-large .orbit  { transform-style: preserve-3d; }
@@ -66,7 +66,7 @@
 .view-3D .planet, 
 .view-3D .moon              { transform: rotateX(0deg); }
 
-/* --------------------------------------------------------------------------- large zoom */
+
 
 .zoom-large #solar-system { width: 100%; }
 
@@ -79,7 +79,7 @@
 .zoom-large.view-2D .scale-s #solar-system { font-size: 7%; }
 .zoom-large.view-3D .scale-s #solar-system { font-size: 14%; }
 
-/* --------------------------------------------------------------------------- close zoom */
+
 
 .zoom-close #solar-system { 
   width: 200%; 

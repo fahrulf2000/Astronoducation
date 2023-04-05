@@ -139,7 +139,7 @@ body {
   box-sizing: border-box;
   box-sizing: border-box; }
 
-/* --------------------------------------------------------------------------- planets index */
+
 #mercury {
   z-index: 10; }
 
@@ -170,7 +170,6 @@ body {
 #sun {
   z-index: 1; }
 
-/* --------------------------------------------------------------------------- animations */
 @keyframes orbit {
   0% {
     transform: rotateZ(0deg); }
@@ -192,7 +191,7 @@ body {
   100% {
     transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); } }
 
-/* --------------------------------------------------------------------------- opening */
+
 .view-3D .opening #sun,
 .view-3D .opening .orbit,
 .view-3D .opening .pos,
@@ -204,7 +203,6 @@ body {
 #universe.opening #sun {
   box-shadow: 0 0 0 rgba(255, 160, 60, 0); }
 
-/* --------------------------------------------------------------------------- 2D view */
 .view-2D.zoom-large #sun {
   transform-style: flat; }
 
@@ -219,7 +217,6 @@ body {
 .view-2D .moon {
   transform: rotateX(90deg); }
 
-/* --------------------------------------------------------------------------- 3D view */
 .view-3D.zoom-large #sun {
   transform-style: preserve-3d; }
 
@@ -239,7 +236,6 @@ body {
 .view-3D .moon {
   transform: rotateX(0deg); }
 
-/* --------------------------------------------------------------------------- large zoom */
 .zoom-large #solar-system {
   width: 100%; }
 
@@ -261,7 +257,7 @@ body {
 .zoom-large.view-3D .scale-s #solar-system {
   font-size: 14%; }
 
-/* --------------------------------------------------------------------------- close zoom */
+
 .zoom-close #solar-system {
   width: 200%;
   font-size: 100%; }
@@ -310,9 +306,7 @@ body {
   left: 100%!important;
   top: 50%!important; }
 
-/* --------------------------------------------------------------------------- data */
-/* --------------------------------------------------------------------------- speed */
-/* sideral years */
+
 #mercury .pos,
 #mercury .planet,
 #mercury.orbit {
@@ -358,8 +352,7 @@ body {
 #neptune.orbit {
   animation-duration: 1977.49584s; }
 
-/* --------------------------------------------------------------------------- planets sizes */
-/* --------------------------------------------------------------------------- stretched sizes */
+
 .scale-stretched #sun {
   font-size: 24em; }
 
@@ -390,12 +383,7 @@ body {
 .scale-stretched #neptune .planet {
   font-size: 4.9em; }
 
-/* --------------------------------------------------------------------------- scaled sizes */
-/*
-(planets radius * 2) * ratio
-*/
-/*$distanceScaleRatio:   0.000075em;*/
-/* --------------------------------------------------------------------------- planets distance scale sizes */
+
 .scale-d #sun {
   font-size: 41.73048em; }
 
@@ -426,7 +414,7 @@ body {
 .scale-d #neptune .planet {
   font-size: 1.47732em; }
 
-/* --------------------------------------------------------------------------- planet size scale sizes */
+
 .scale-s #sun {
   font-size: 417.3048em; }
 
@@ -569,7 +557,7 @@ body {
   margin-top: -0.5em;
   margin-left: -0.5em; }
 
-/* --------------------------------------------------------------------------- size scale orbits */
+
 .scale-s #mercury.orbit {
   width: 441.3048em;
   height: 441.3048em;
@@ -625,8 +613,7 @@ body {
   margin-top: -0.5em;
   margin-left: -0.5em; }
 
-/* --------------------------------------------------------------------------- text infos data */
-/* --------------------------------------------------------------------------- speed */
+
 .set-speed dl.infos dd span:after {
   content: 'Kecepatan Orbit'; }
 
@@ -657,7 +644,7 @@ body {
 .set-speed #neptune dl.infos dd:after {
   content: '19,566 km/h'; }
 
-/* --------------------------------------------------------------------------- size */
+
 .set-size dl.infos dd span:after {
   content: 'LingKar Khatulistiwa'; }
 
@@ -688,7 +675,7 @@ body {
 .set-size #neptune dl.infos dd:after {
   content: '154,704 km'; }
 
-/* --------------------------------------------------------------------------- distance */
+
 .set-distance dl.infos dd span:after {
   content: 'Dari Matahari'; }
 
@@ -722,8 +709,7 @@ body {
 .set-distance #neptune dl.infos dd:after {
   content: '4,498,396,441 km'; }
 
-/* --------------------------------------------------------------------------- planets starting position and lighting effect */
-/* --------------------------------------------------------------------------- mercury ; pos: Top */
+
 #mercury .pos {
   left: 50%;
   top: -1%; }
@@ -761,7 +747,7 @@ body {
   box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
   /* RIGHT */ }
 
-/* --------------------------------------------------------------------------- venus ; pos: Left */
+
 #venus .pos {
   left: 0;
   top: 50%; }
@@ -799,7 +785,7 @@ body {
   box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
   /* RIGHT */ }
 
-/* --------------------------------------------------------------------------- earth ; pos: Right */
+
 #earth .pos {
   left: 100%;
   top: 50%; }
@@ -837,12 +823,12 @@ body {
   box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
   /* RIGHT */ }
 
-/* --------------------------------------------------------------------------- moon */
+
 #earth .orbit .pos {
   left: 100%;
   top: 50%; }
 
-/* --------------------------------------------------------------------------- mars ; pos: Bottom */
+
 #mars .pos {
   left: 50%;
   top: 100%; }
@@ -880,7 +866,7 @@ body {
   box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
   /* RIGHT */ }
 
-/* --------------------------------------------------------------------------- jupiter ; pos: Right */
+
 #jupiter .pos {
   left: 100%;
   top: 50%; }
@@ -918,7 +904,7 @@ body {
   box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.5);
   /* RIGHT */ }
 
-/* --------------------------------------------------------------------------- saturn ; pos: Left */
+
 #saturn .pos {
   left: 0%;
   top: 50%; }
@@ -956,25 +942,7 @@ body {
   box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.5);
   /* RIGHT */ }
 
-/* --------------------------------------------------------------------------- saturn ring */
-/*
 
-#saturn .ring           { animation-name:     shadow-saturn-ring; }
-
-@keyframes 
-shadow-saturn-ring{ 0%   { box-shadow: inset -16px  0      4px   rgba(20, 40, 50, 0.45); opacity: .4; }
-                  25%    { box-shadow: inset -5px   -30px   12px  rgba(20, 40, 50, 0.3);  opacity: 1; }
-                  25.01% { box-shadow: inset 5px    -30px   12px  rgba(20, 40, 50, 0.3);  opacity: 1; }
-                  50%    { box-shadow: inset 16px   0      4px   rgba(20, 40, 50, 0.45);  opacity: .4; }
-                  75%    { box-shadow: inset 0      30px  50px  rgba(20, 40, 50, 0);  opacity: .3; }
-                  100%   { box-shadow: inset -16px  0      4px   rgba(20, 40, 50, 0.45);  opacity: .4; }
-                }
-
-.scaled.view-2D #saturn .ring,
-.scaled.view-3D #saturn .ring { box-shadow: inset 16px   0      4px   rgba(20, 40, 50, 0.6); }
-
-*/
-/* --------------------------------------------------------------------------- uranus ; pos: Left */
 #uranus .pos {
   left: 0;
   top: 50%; }
@@ -1012,7 +980,7 @@ shadow-saturn-ring{ 0%   { box-shadow: inset -16px  0      4px   rgba(20, 40, 50
   box-shadow: inset -8px 0 5px rgba(0, 0, 0, 0.5);
   /* RIGHT */ }
 
-/* --------------------------------------------------------------------------- neptune ; pos: Top */
+
 #neptune .pos {
   left: 50%;
   top: 0; }
@@ -1050,14 +1018,7 @@ shadow-saturn-ring{ 0%   { box-shadow: inset -16px  0      4px   rgba(20, 40, 50
   box-shadow: inset -12px 0 5px rgba(0, 0, 0, 0.5);
   /* RIGHT */ }
 
-/* --------------------------------------------------------------------------- DEBUG 
-.pos, 
-.planet, 
-.orbit,
-.ring { animation-duration: 20s!important; }
 
-/* */
-/* --------------------------------------------------------------------------- navigation styles */
 dl.infos {
   position: absolute;
   display: block;
@@ -1423,7 +1384,7 @@ body {
 #neptune .planet {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA3CAMAAACfBSJ0AAAABGdBTUEAALGPC/xhBQAAAGBQTFRFZoGyU2ybWHKiU2yZV3CgVm+eVm+dV3GhVG2bAAAAmLjslbbqk7ToZIO3aovBZ4e7cJTMkLHmbI/FYX+yXnusWnWlja7kiavhc5fRg6bdhqjfeZ3WgKTbdprUfqHZe5/XTjN33QAAAAp0Uk5T82DQILiggOhMAI3C2HIAAAPgSURBVEjHjZaLVqNAEEQxkoAmIAYIb/j/v9yuqp4BNetum8R4Dtfq6elX8vbE8kt6apsWdkov+bNHkp/QOWvbpqlhTQM6O+f/5F4Mag0qPmSFwUBffuXyLEBleaeVpaNZ/lfuNTWoMMSYqur7pTerqjtQI9PX51yekSICW2DTsvTV/U7yKLlzFxP7gJIAMZPZAlSal5/cuW0oFigA9t62jSi9bdrzdw4YKTw6TfrcgNkX+wpvywOYRCcd29YNLzy+8su6umRvYB1cFZfjbMD4FF6rPmR0lr6aYr5zrxmxBWpusz7nnQNYlUWbvUYubS2ScjJgMxD/2MH+/lG3aeByHs6xmTaY2R/DwL94UESnj56Co5cW/wM2DuMo3N5z8NWyB4KZuJe2LuglqIEUbNhtlq/IuwqCL+SypvDDyb9h6Dqj8BpHvgdydoc6YZOBy1t5KTnY2BkI6/gDZXELr988zY07Q245yAE7GhQRG+QPU7VozsbRzckxONZ1j91cGorh9o3L3hK6aVm5Omfe2eOfZvglshsV1G0Ld5gnF7qJpJoVC8p93m4gRUNS14iaWsBdkvToJgQld7uRjCDzgLVojtZNmpwQTXDrzn2Cu15vDhvIE+p8POAp0S2Qm3l1D9e7wggqOkrThQdsWnJL5HAH0rte39/fAUZuVmB6BibohXtwvZu4d+eMHDzXvnKLH5B3/l3vU5hu8AvXRy44+lWvG0NuH7gi6s2Bo6PCwHVDyG1dfCHO7h2NyxMmCN5iOJVpIWFUSsmpcS4mWoioru/xCAmq3BZ3snypwcWL8JuHIl4Pcp37OakgrMckFwsMywh+oikMI2/iEbIsFgTzs1dYLlYPTShbNbChe8RCwuEcw/mm2Clyrz8JsuMOLNZDAVLMK16cdSbVu2W2WrvVYaz3HTMvvFH47Z3VX4qyNykLjY2gNQR1bxPhCryK2EHZzyyi08YjTmjP86HJhCYhrj/0M+ufjIwlG2OqQhyjDfHqvPhq75+MjA0jVu+ssA7sGV/a7jSFbpbF+aCxogGxBXBW9/agqH169wzzyMeY0m3dfEqEoUQnUOmSS4/zT9OWU5qp6hMmjsItrAfNYf5xkn0I3CaN5n1qhoLlblA3+ff57iCig55+mNUcfhzTdXP5sU94cBZ2rYnbhLQnbjEVl5/zk/0Faw9Kaln21Wfa1KQxh57tL9qXdI991UdQ/4ar1vN9Ke5nZRkWNC5pKPAKa6GlV/7LPlhD1Ha7SssgpAyCj3/bB+P+GdfP0n7ugGzx/WX/9H0XO3Khfdd+FVhbm3/su0/2a9uw/2e/3vf59td9/g/87+wnzrJ1rQAAAABJRU5ErkJggg==); }
 
-/* --------------------------------------------------------------------------- responsive styles */
+
 @media screen and (max-width: 299px) {
   #universe {
     font-size: 20%; } }

@@ -1,5 +1,4 @@
-
-// Update anchor now that we've updated the page		
+//Update anchor now that we've updated the page
 if(location.hash) document.location = location.hash;
 
 var d = new Date(document.lastModified);
