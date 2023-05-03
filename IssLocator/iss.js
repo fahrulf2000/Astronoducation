@@ -2,14 +2,12 @@ let xshow = 0;
 
 
 
-// Making the map and tiles
 var map = L.map('map').setView([0, 0], 1);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Making the marker and give it icon
 const myIcon = L.icon({
     iconUrl: 'icon.png',
     iconSize: [50, 32],
@@ -36,7 +34,7 @@ let ShowLan = document.querySelector(".longitude")
 
 
 
-let t = 0;
+let t = 60;
 let firstTime = true;
 
 
@@ -60,7 +58,7 @@ async function getISS(){
 function load(){    
 const issInterval = setInterval( ()=>{
     getISS(); 
-    }, 2000);
+    }, 10000);
 
 
         setTimeout(() => {
@@ -68,30 +66,13 @@ const issInterval = setInterval( ()=>{
             myloader.style.display = "none";
             ShowLat.style.display = "block";
             ShowLan.style.display = "block";
-            xshow = 0;
+            xshow = 1;
         }, 3500);
         
 
 
  };
 
-//  function start(){
 
-//     setTimeout(() => {
-//         load();
-//         myloader.style.display = "none";
-//         ShowLat.style.display = "block";
-//         ShowLan.style.display = "block";
-//     }, 500);
-    
-//  }
-
- load();
-// const Ftime = setTimeout(() => {
-//     myloader.style.display = "none";
-//     program.style.display = "block";
-//     load();
-// }, 2000);
-
-
+load();
 

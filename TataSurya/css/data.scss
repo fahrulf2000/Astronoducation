@@ -212,3 +212,15 @@ $d-neptune:             4498396441;
 .set-distance #saturn dl.infos dd:after  { content: '1,426,666,422 km'; }
 .set-distance #uranus dl.infos dd:after  { content: '2,870,658,186 km'; }
 .set-distance #neptune dl.infos dd:after { content: '4,498,396,441 km'; }
+
+.set-komposisi dl.infos dd span:after     { content: 'Komposisi'; }
+
+.set-komposisi #sun dl.infos dd:after     { content: '0 km/h'; }
+.set-komposisi #mercury dl.infos dd:after { content: '170,503 km/h'; }
+.set-komposisi #venus dl.infos dd:after   { content: '126,074 km/h'; }
+.set-komposisi #earth dl.infos dd:after   { content: '107,218 km/h'; }
+.set-komposisi #mars dl.infos dd:after    { content: '86,677 km/h'; }
+.set-komposisi #jupiter dl.infos dd:after { content: '47,002 km/h'; }
+.set-komposisi #saturn dl.infos dd:after  { content: '34,701 km/h'; }
+.set-komposisi #uranus dl.infos dd:after  { content: '24,477 km/h'; }
+.set-komposisi #neptune dl.infos dd:after { content: '19,566 km/h'; }
