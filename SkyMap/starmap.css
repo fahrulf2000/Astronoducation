@@ -1,0 +1,38 @@
+body {
+    background: gray;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    text-align: justify;
+    text-indent: 50px;
+    font-size: small;
+    display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 10px;
+      margin-inline-end: 25px;
+  }
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+
+}
+
+.info {
+    margin: auto;
+    width: auto;
+    padding: 8px;
+  }
+  
+img {
+    float: right;
+    width: auto;
+    height: 260px;
+    padding: 0 0 0 10px;
+    border-radius: 10%;
+}
