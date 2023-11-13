@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Astronomi</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Astronomi</h1>
+        <p>Masukkan nama Anda: <input type="text" id="nama" /></p>
+        <button id="mulai-quiz">Mulai Quiz</button>
+        <div id="quiz" style="display: none;">
+            <h2 id="pertanyaan"></h2>
+            <div id="pilihan-container"></div>
+            <button id="submit-jawaban">Submit Jawaban</button>
+        </div>
+        <div id="hasil-quiz" style="display: none;">
+            <h2>Hasil Quiz</h2>
+            <p>Nama: <span id="nama-hasil"></span></p>
+            <p>Skor: <span id="skor"></span></p>
+            <button id="simpan-skor">Simpan Skor</button>
+        </div>
+        <div id="ranking" style="display: none;">
+            <h2>Ranking</h2>
+            <ol id="ranking-list"></ol>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
