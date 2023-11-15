@@ -1,59 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Celestial Coordinate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CELESTIAL COORDINATE</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
+            margin: 0;
         }
 
         .container {
-            max-width: 600px;
-            margin: 0 auto;
+            max-width: 800px;
+            margin: 50px auto;
             padding: 20px;
             background-color: #ffffff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             text-align: center;
+            color: #333;
         }
 
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         label {
             display: block;
             font-weight: bold;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            color: #555;
         }
 
         select {
             width: 100%;
-            padding: 8px;
+            padding: 12px;
             font-size: 16px;
             border-radius: 5px;
             border: 1px solid #ccc;
+            background-color: #fff;
+            color: #555;
         }
 
         .result {
-            margin-top: 20px;
+            margin-top: 30px;
             background-color: #f9f9f9;
-            padding: 10px;
-            border-radius: 5px;
+            padding: 20px;
+            border-radius: 10px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 15px;
         }
 
         th, td {
-            padding: 8px;
+            padding: 15px;
             border-bottom: 1px solid #ddd;
+            word-wrap: break-word;
         }
 
         th {
@@ -63,14 +72,21 @@
         }
 
         img {
-            max-width: 300px;
-            max-height: 300px;
+            max-width: 80%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style for the description column */
+        #description {
+            white-space: pre-wrap;
         }
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function(){
-            // Mengubah data asensiorekta dan deklinasi saat pilihan Combo Box berubah
+            // Mengubah data asensiorekta, deklinasi, dan deskripsi saat pilihan Combo Box berubah
             $('#star').change(function(){
                 var star_id = $(this).val();
                 if(star_id){
@@ -82,6 +98,7 @@
                             var result = JSON.parse(data);
                             $('#ascension').text(result.ascension);
                             $('#declination').text(result.declination);
+                            $('#description').text(result.description);
                             $('#image').attr('src', result.image);
                         }
                     });
@@ -119,11 +136,13 @@
                 <tr>
                     <th>Asensiorekta</th>
                     <th>Deklinasi</th>
+                    <th>Deskripsi</th>
                     <th>Gambar</th>
                 </tr>
                 <tr>
                     <td id="ascension"></td>
                     <td id="declination"></td>
+                    <td id="description"></td>
                     <td><img id="image" src="" alt="Gambar Benda Langit"></td>
                 </tr>
             </table>

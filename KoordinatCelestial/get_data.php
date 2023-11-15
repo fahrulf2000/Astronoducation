@@ -17,6 +17,7 @@ if(mysqli_num_rows($result) > 0){
     $data = array(
         'ascension' => $row['ascension'],
         'declination' => $row['declination'],
+        'description' => $row['description'],
         'image' => $row['image']
     );
     echo json_encode($data);
