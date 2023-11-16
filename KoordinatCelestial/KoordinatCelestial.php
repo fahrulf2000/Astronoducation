@@ -72,8 +72,8 @@
         }
 
         img {
-            max-width: 80%;
-            height: auto;
+            width: 300px;
+            height: 250px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
@@ -134,8 +134,8 @@
         <div class="result">
             <table>
                 <tr>
-                    <th>Asensiorekta</th>
-                    <th>Deklinasi</th>
+                    <th>Asensiorekta (R.A)</th>
+                    <th>Deklinasi (Dec)</th>
                     <th>Deskripsi</th>
                     <th>Gambar</th>
                 </tr>
